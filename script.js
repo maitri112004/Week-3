@@ -1,45 +1,26 @@
-// Step 1
+// Challenge 1
 
-const library = [
-    {
-      title: "Book One",
-      author: "Author One",
-      status: {
-        own: true,
-        reading: false,
-        read: false
-      }
-    },
-    {
-      title: "Book Two",
-      author: "Author Two",
-      status: {
-        own: true,
-        reading: false,
-        read: false
-      }
-    },
-    {
-      title: "Book Three",
-      author: "Author Three",
-      status: {
-        own: true,
-        reading: false,
-        read: false
-      }
-    }
-  ];
-  
-  // Step 2
-  library[0].status.read = true;
-  library[1].status.read = true;
-  library[2].status.read = true;
-  
-  // Step 3
-  const { title: firstBook } = library[0];
-  
-  // Step 4
-  const libraryJSON = JSON.stringify(library);
-  
-  console.log(firstBook); 
-  console.log(libraryJSON);
+
+const arr = [1, 2, 3, 4, 5];
+
+
+arr.reverse();
+
+
+arr.unshift(6);
+
+
+arr.push(0);
+
+console.log(arr);
+
+
+// Challenge 2
+
+const arr1 = [1, 2, 3, 4, 5];
+const arr2 = [5, 6, 7, 8, 9, 10];
+
+
+const arr3 = arr1.concat(arr2.slice(1));
+
+console.log(arr3);
